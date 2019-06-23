@@ -1,10 +1,7 @@
-Wat gaan we vandaag doen?
-
-- Url builder prettyfier in orde maken (htaccess)
-    - htaccess maken die redirect
-
-- Shoppingcart fixen
-    - button toevoegen
-    - javascript ajax call maken naar endpoint
-    - Cart.php maken om de shopping cart in de session te updaten
-    - shoppingcart updaten
+To do:
+    -remove item from cart
+    -add jquery event for cart display on hover
+    -verify/change routing from login to home page
+    -verify logout and reset admin
+    -change partials
+    -front end update
