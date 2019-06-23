@@ -9,7 +9,7 @@ $(document).ready(function() {
 });
 
 // When an order button is clicked: get url from element and run the action
-$('.order').click(function(event) {
+/*$('.order').click(function(event) {
 
     // Run the url provided in the a link
     $.ajax({
@@ -26,5 +26,4 @@ $('.order').click(function(event) {
         }, 300);
     });
 });
-
-location.reload();
+*/

@@ -18,12 +18,11 @@
             'country' => $_POST['country'],
             'city' => $_POST['city'],
         ]);
+        header('Location: ../inloggen/index.php');
     }
 
     $title = 'Registreren';
     include "../../partials/head.php";
-
-    include "../../partials/menu.php";
 ?>
 
 <div class="container">

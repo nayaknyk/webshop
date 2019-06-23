@@ -3,7 +3,7 @@
 class DB {
 
     private $dbhost = 'localhost';
-    private $dbname = 'webshop8b';
+    private $dbname = 'webshop';
     private $dbuser = 'root';
     private $dbpass = '';
     private $connection = null;

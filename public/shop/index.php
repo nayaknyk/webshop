@@ -1,32 +1,27 @@
 <?php
     include '../../boot.php'; // laadt alle benodigdheden in
 
-    $query = 'SELECT * FROM products WHERE slug = :slug';
-
+    $query = 'SELECT * FROM products ORDER By title';
     $db = new DB;
-    $product = $db->find($query, ['slug' => $_GET['slug']]);
-
-
-    $title = $product['title'];
+    $products = $db->get($query);
+    $title = 'Home';
     include "../../partials/head.php";
+?>
 
-    include "../../partials/cart.php";
+<?php include "../../partials/menu.php"; ?>
+<div class="container">
+    <h2>Items on sale</h2>
 
-    include "../../partials/menu.php"; ?>
-
-    <div class="container product">
-        <div class="row">
-            <div class="col-sm-6">
-                <img src="<?= Http::asset('img/'.$product['image']); ?>">
+    <div class="row">
+        <?php foreach($products as $product) { ?>
+            <div class="col-sm-4">
+                <a href="<?= Http::asset('product/index.php?slug='.$product['slug']); ?>">
+                    <?= $product['title']; ?>
+                </a><br>
+                <img src="<?= Http::asset('img/'.$product['image']); ?>" style="width: 200px; height: 200px">
             </div>
-            <div class="col-sm-6">
-                <h1><?= $product['title']; ?></h1>
-                <br>
-                <?= $product['pdesc']; ?>
-                <br>
-                <a href="<?= Http::asset('api/cart.php?id='.$product['id'].'&action=add'); ?>" class="btn btn-success order">Toevoegen aan winkelmand</a>
-            </div>
-        </div>
+        <?php } ?>
     </div>
+</div>
 
 <?php include "../../partials/footer.php"; ?>

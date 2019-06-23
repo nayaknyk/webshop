@@ -9,7 +9,7 @@
 
     // If loggend in, redirect to url
     if(Auth::check()) {
-        header("Location: ../index.php");
+        header("Location: ../shop/index.php");
     }
 
     $title = 'Inloggen';
