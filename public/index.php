@@ -2,19 +2,15 @@
     include '../boot.php'; // laadt alle benodigdheden in
 
     $query = 'SELECT * FROM products ORDER By title';
-
     $db = new DB;
     $products = $db->get($query);
-
-
     $title = 'Home';
     include "../partials/head.php";
 ?>
 
 <?php include "../partials/menu.php"; ?>
-
 <div class="container">
-    Home
+    <h2>Items on sale</h2>
 
     <div class="row">
         <?php foreach($products as $product) { ?>
