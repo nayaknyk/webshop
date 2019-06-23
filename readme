@@ -1,0 +1,19 @@
+-updated navbar and links
+-page routing updated
+-cleaned up js code and partials
+-db tables/code is universal, no changes necessary before running
+
+PAGES:
+1. Added new home page from template to act as landing page
+2. Moved old home page to shop/index.php
+3. Shop page redirects to products/index.php for each product
+4. Added new image & font assets for new home page
+
+TO DO:
+-update new home page with proper images and products
+-update product images in db and add assets
+-add checkout,payment(?) page and logic
+-add button to remove elements on each line of cart :HINT: use dom to dynamically create button node elemnts per row
+    and then use ajax to call cart api fn
+
+
