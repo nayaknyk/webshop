@@ -9,7 +9,7 @@
 
     // If loggend in, redirect to url
     if(Auth::check()) {
-        header("Location: ../shop/index.php");
+        header("Location: ../index.php");
     }
 
     $title = 'Inloggen';
@@ -32,8 +32,6 @@
         }
       }
     </style>
-    <!-- Custom styles for this template -->
-    <link href="css/signin.css" rel="stylesheet">
 
   <body class="text-center bg">
 <style>

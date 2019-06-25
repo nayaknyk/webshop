@@ -63,4 +63,8 @@ nav {
     margin-bottom: 30px;
 }
 
+a:hover{
+    text-decoration: none;
+    color:black;
+}
 
