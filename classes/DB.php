@@ -1,7 +1,6 @@
 <?php
 
 class DB {
-
     private $dbhost = 'localhost';
     private $dbname = 'webshop';
     private $dbuser = 'root';

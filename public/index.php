@@ -52,7 +52,7 @@
         <!--/banner-->
         <div class="banner-info">
             <p>Trending this week</p>
-            <h3 class="mb-4">Lorem Ipsum</h3>
+            <h3 class="mb-4">Fresh Belts</h3>
             <div class="ban-buttons">
                 <a href="<?= Http::asset('shop'); ?>" class="btn">Shop Now</a>
                 <a href="<?= Http::asset('about'); ?>" class="btn active">Read More</a>

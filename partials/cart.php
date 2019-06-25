@@ -15,5 +15,5 @@
         </tbody>
     </table>
 
-    <a class="btn btn-success" href="<?=Http::asset('afrekenen'); ?>">Afrekenen</a>
+    <a class="btn btn-success" href="<?=Http::asset('checkout'); ?>">Afrekenen</a>
 </aside>

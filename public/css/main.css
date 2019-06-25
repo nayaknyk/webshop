@@ -1,12 +1,13 @@
 nav {
     margin-bottom: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .cart {
     position: fixed;
-    right: -385px;
+    right: -435px;
     top: 60px;
-    width: 400px;
+    width: 450px;
     min-height: 200px;
     background-color: #FFF;
     transition: all .5s;
@@ -26,6 +27,7 @@ nav {
 
 .cart .table {
     table-layout: fixed;
+    width: 400px;
 }
 
 .cart th.product {

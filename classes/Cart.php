@@ -1,7 +1,6 @@
 <?php
-
+   
 class Cart {
-
     public static function boot()
     {
         if(! array_key_exists('cart', $_SESSION)) {
@@ -69,5 +68,4 @@ class Cart {
     {
         return $_SESSION['cart'];
     }
-
 }

@@ -8,7 +8,7 @@
         VALUES
         (:first_name, :suffix_name, :last_name, :email, :password, :country, :city)';
 
-        $db = new DB();
+        $db = new DB;
         $db->insert($query, [
             'first_name' => $_POST['first_name'],
             'suffix_name' => $_POST['suffix_name'],
