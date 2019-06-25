@@ -1,3 +1,9 @@
+#bad request
+ErrorDocument 400 /webshop/400.php
+
+#not found
+ErrorDocument 404 /webshop/404.php
+
 RewriteEngine On
 
 # If the url is shop/[something], we change the url to shop/index.php?slug=[something]
